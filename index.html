@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css"> 
+  <link rel="stylesheet" type="text/css" href="vendors/css/animate.css"> 
   <link rel="stylesheet" type="text/css" href="resources/css/style.css">
   <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
@@ -17,28 +18,31 @@
     <nav>
       <div class="row">
         <img src="resources/css/img/logo.png" alt="logo image" class="logo">
-        <ul class="main-nav">
-          <li><a href="#">websites</a></li>
-          <li><a href="#">classes taught</a></li>
-          <li><a href="#">resume</a></li>
+        <img src="resources/css/img/logo-black.png" alt="logo image" class="logo-black">
+        <ul class="main-nav js--main-nav">
+          <li><a href="#features">About</a></li>
+          <li><a href="#works">Getting Started</a></li>
+          <li><a href="#creations">Past Projects</a></li>
+          <li><a href="#plans">Services</a></li>
         </ul>
+        <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
       </div>
   </nav>
     <div class="hero-text-box">
       <h1>Rob Merrill | Web Developer</h1>
-      <a class="btn btn-full" href="#">Projects</a>
-      <a class="btn btn-ghost" href="#">JavaScript Instructor</a>
+      <a class="btn btn-full js--scroll-to-plans" href="#">Services</a>
+      <a class="btn btn-ghost js--scroll-to-start" href="#">About</a>
     </div>
   </header>
 
-  <section class="section-features">
+  <section class="section-features js--section-features" id="features">
     <div class="row">
       <h2>Web Developer | JavaScript Instructor</h2>
       <p class="long-copy">
-        Website Design: If you want a website I will build it. I will create a single page website that will give a full oversite of your company and what services you provide. 
+        I specialize in webpage design. I also have a deep appreciation for code. As on online JavaScript instructor I have a top rated JavaScript programming course with over 1,400 students.
       </p>
     </div>
-    <div class="row">
+    <div class="row js--wp-1">
       <div class="col span-1-of-4 box" > 
         <i class="ion-ios-monitor-outline icon-big"></i>
         <h3>Website Design</h3>
@@ -47,7 +51,7 @@
       <div class="col span-1-of-4 box">
         <i class="ion-ios-folder-outline icon-big"></i>
         <h3>
-          Past Work
+          Mobile Friendly
         </h3>
         <p>
           Website design description. This is where I write about the website design experience
@@ -55,14 +59,14 @@
       </div>
       <div class="col span-1-of-4 box">
         <i class="ion-social-github icon-big"></i>
-        <h3>Github Account</h3>
+        <h3>JavaScript Instructor</h3>
         <p>
           Website design description. This is where I write about the website design experience
         </p>
       </div>
       <div class="col span-1-of-4 box">
         <i class="ion-code icon-big"></i>
-        <h3>JavaScript Instructor</h3>
+        <h3>Open Source Contributor</h3>
         <p>
           Website design description. This is where I write about the website design experience
         </p>
@@ -70,7 +74,7 @@
     </div>
   </section>
 
-  <section class="section-portfolio">
+  <!-- <section class="section-portfolio">
     <div class="row clearfix">
       <h2>Portfolio</h2>
     </div>
@@ -118,9 +122,9 @@
         </figure>
       </li>
     </ul>
-  </section>
+  </section> -->
 
-  <section class="section-steps">
+  <section class="section-steps" id="works">
     <div class="row">
       <h2>
         Steps to get started! &mdash; Simple as 1, 2, 3
@@ -128,33 +132,67 @@
     </div>
     <div class="row">
       <div class="col span-1-of-2 steps-box">
-        <img src="resources/css/img/lazNutrition5.png" alt="Lazaro Nutrition Exmple" class="app-screen">
+        <img src="resources/css/img/lazNutrition5.png" alt="Lazaro Nutrition Exmple" class="app-screen js--wp-2">
       </div>
       <div class="col span-1-of-2 steps">
         <div class="works-step">
           <div>1</div>
-          <p>This is where I am going to put step one. This is the second sentence.</p>
+          <p>Every successful project is underpinned by a project plan. Before a pixel is created I'll help you set your objectives, understand who your audiences (customers) are, and find the best ways to reach them.</p>
         </div>
         <div class="works-step">
           <div>2</div>
-          <p>This is where I am going to put step one. This is the second sentence.</p>
+          <p>THen we'll decide on a budget, and scope out the project to deliver the best return on your investment. At this stage we'll be ready to create a sitemap and wireframes (basic page layouts).</p>
         </div>
         <div class="works-step">
           <div>3</div>
-          <p>This is where I am going to put step one. This is the second sentence.</p>
+          <p>User Experience is the lasting feeling a user will have after visiting your site. Having considered the UX, I'll then work on your User Interface.</p>
         </div>
-         <a href="#" class="btn-app"><img src="resources/css/img/appleAppStore.jpg"></a>
-         <a href="#" class="btn-app"><img src="resources/css/img/googleAppStore.png"></a>
+         <!-- <a href="#" class="btn-app"><img src="resources/css/img/appleAppStore.jpg"></a>
+         <a href="#" class="btn-app"><img src="resources/css/img/googleAppStore.png"></a> -->
       </div>
     </div>
   </section>
 
-<section class="section-creations">
+<section class="section-creations" id="creations">
   <div class="row">
-      <h2>Things I Have Made</h2>
+      <h2>Past Projects</h2>
   </div>
-  <div class="row">
-    <div class="col span-1-of-4 box">
+  <div class="row js--wp-3">
+    <div class="col span-1-of-2 box">
+      <img src="resources/css/img/lazNutrition.png" alt="">
+      <h3>Website Design</h3>
+        <div class="creations-feature">
+          <i class="ion-ios-person icon-small"></i>
+            Lazaro Nutrition
+        </div>
+        <div class="creations-feature">
+          <i class="ion-ios-person icon-small"></i>
+            Responsive Web Design
+        </div>
+        <div class="creations-feature">
+          <i class="ion-ios-home icon-small"></i>
+            <a href="http://lazaronutrition.com">Lazaro Nutrition</a>
+        </div>
+
+    </div>
+    <div class="col span-1-of-2 box">
+      <img src="resources/css/img/JavaScript.png" alt="">
+      <h3>JavaScript Instructor</h3>
+        <div class="creations-feature">
+          <i class="ion-ios-person icon-small"></i>
+            Udemy Instructor
+        </div>
+        <div class="creations-feature">
+          <i class="ion-ios-person icon-small"></i>
+            Top Rated Course With Over 1,400 Students
+        </div>
+        <div class="creations-feature">
+          <i class="ion-ios-home icon-small"></i>
+            <a href="https://www.udemy.com/javascript-the-basics-for-beginners/?couponCode=JAVASCRIPT90"> 75% Off</a>
+        </div>
+
+    </div>
+    <!-- <div class="col span-1-of-4 box">
       <img src="resources/css/img/lazNutrition.png" alt="">
       <h3>Lazaro Nutrition</h3>
         <div class="creations-feature">
@@ -187,99 +225,66 @@
             <a href="#">Lazaro Nutrition</a>
         </div>
 
-    </div>
-    <div class="col span-1-of-4 box">
-      <img src="resources/css/img/lazNutrition.png" alt="">
-      <h3>Lazaro Nutrition</h3>
-        <div class="creations-feature">
-          <i class="ion-ios-person icon-small"></i>
-            Lazaro Nutrition
-        </div>
-        <div class="creations-feature">
-          <i class="ion-ios-person icon-small"></i>
-            Lazaro Nutrition
-        </div>
-        <div class="creations-feature">
-          <i class="ion-ios-person icon-small"></i>
-            <a href="#">Lazaro Nutrition</a>
-        </div>
-
-    </div>
-    <div class="col span-1-of-4 box">
-      <img src="resources/css/img/lazNutrition.png" alt="">
-      <h3>Lazaro Nutrition</h3>
-        <div class="creations-feature">
-          <i class="ion-ios-person icon-small"></i>
-            Lazaro Nutrition
-        </div>
-        <div class="creations-feature">
-          <i class="ion-ios-person icon-small"></i>
-            Lazaro Nutrition
-        </div>
-        <div class="creations-feature">
-          <i class="ion-ios-person icon-small"></i>
-            <a href="#">Lazaro Nutrition</a>
-        </div>
-
-    </div>
+    </div> -->
   </div>
 </section>
 
 <section class="section-testimonials">
   <div class="row">
-    <h2>Our Satisfied Customers</h2>
+    <h2>Satisfied Customers</h2>
   </div>
   <div class="row">
     <div class="col span-1-of-3">
       <blockquote>
-        Rob is the best person. He programs real good. Buy his services.
-        <cite><img src="resources/css/img/customer-1.jpg" alt="">Anonymous</cite>
+        Rob was a lifesaver. I had been trying to build a website myself for months. He listened to my needs and in no time we had a website that we were excited about. Highly recommended!
+        <cite><img src="resources/css/img/avatar.png" alt="">Stacia</cite>
+      </blockquote>
+    </div>
+    <div class="col span-1-of-3">
+      <blockquote>
+        Clear, Easy to understand. Very professional. Recommended. I am a backend Java developer and required to get an understanding of the UI world. This course explained the basics of Javascript in an easy to follow way. I feel confident with the mechanics of Javascript now.
+        <cite><img src="resources/css/img/avatar1.png" alt="">Sharon</cite>
       </blockquote>
     </div>
     <div class="col span-1-of-3">
       <blockquote>
         Rob is the best person. He programs real good. Buy his services.
-        <cite><img src="resources/css/img/customer-1.jpg" alt="">Anonymous</cite>
-      </blockquote>
-    </div>
-    <div class="col span-1-of-3">
-      <blockquote>
-        Rob is the best person. He programs real good. Buy his services.
-        <cite><img src="resources/css/img/customer-1.jpg" alt="">Anonymous</cite>
+        <cite><img src="resources/css/img/avatar2.png" alt="">Anonymous</cite>
       </blockquote>
     </div>
   </div>
   
 </section>
 
-<section class="section-plans">
+<section class="section-plans js--section-plans" id="plans">
   <div class="row">
-    <h2>Plans</h2>
+    <h2>Services</h2>
     <div class="row">
       <div class="col span-1-of-3">
-        <div class="plan-box">
+        <div class="plan-box js--wp-4">
           <div>
-            <h3>Premium</h3>
-            <p class="plan-price">$199 <span>/ month</span></p>
+            <h3>Web Design</h3>
+            <p class="plan-price">$199 <!-- <span>/ month</span> --></p>
             <p class="plan-price-month">Text</p>
           </div>
           <div>
             <ul>
-              <li><i class="ion-checkmark-round icon-small"></i>text text text</li>
-              <li><i class="ion-checkmark-round icon-small"></i>text text text</li>
-              <li><i class="ion-checkmark-round icon-small"></i>text text text</li>
-              <li><i class="ion-checkmark-round icon-small"></i>text text text</li>
+              <li><i class="ion-checkmark-round icon-small"></i>One page responsive web design</li>
+              <li><i class="ion-checkmark-round icon-small"></i>Great for small businesses</li>
+              <li><i class="ion-checkmark-round icon-small"></i>Sleek Design</li>
+              <li><i class="ion-checkmark-round icon-small"></i>Satisfaction gauranteed</li>
             </ul>
           </div>
           <div>
-            <a href="#" class="btn btn-full">Sign up now</a>
+            <a href="mailto:robgmerrill@gmail.com" class="btn btn-full">Let's chat</a>
+            
           </div>
         </div>
       </div>
       <div class="col span-1-of-3">
         <div class="plan-box">
           <div>
-            <h3>Premium</h3>
+            <h3>something</h3>
             <p class="plan-price">$199 <span>/ month</span></p>
             <p class="plan-price-month">Text</p>
           </div>
@@ -292,27 +297,27 @@
             </ul>
           </div>
           <div>
-            <a href="#" class="btn btn-ghost">Sign up now</a>
+            <a href="mailto:robgmerrill@gmail.com" class="btn btn-ghost">Let's chat</a>
           </div>
         </div>
       </div>
       <div class="col span-1-of-3">
         <div class="plan-box">
           <div>
-            <h3>Premium</h3>
-            <p class="plan-price">$199 <span>/ month</span></p>
+            <h3>JavaScript Instructor</h3>
+            <p class="plan-price">$10 <!-- <span>/ month</span> --></p>
             <p class="plan-price-month">Text</p>
           </div>
           <div>
             <ul>
-              <li><i class="ion-checkmark-round icon-small"></i>text text text</li>
-              <li><i class="ion-checkmark-round icon-small"></i>text text text</li>
-              <li><i class="ion-checkmark-round icon-small"></i>text text text</li>
-              <li><i class="ion-checkmark-round icon-small"></i>text text text</li>
+              <li><i class="ion-checkmark-round icon-small"></i>7 hours of JavaScript Content</li>
+              <li><i class="ion-checkmark-round icon-small"></i>75% Off</li>
+              <li><i class="ion-checkmark-round icon-small"></i>Learn all the basics of JavaScript in a day</li>
+              <li><i class="ion-checkmark-round icon-small"></i>Vocab and Syntax of JavaScript</li>
             </ul>
           </div>
           <div>
-            <a href="#" class="btn btn-ghost">Sign up now</a>
+            <a href="https://www.udemy.com/javascript-the-basics-for-beginners/?couponCode=JAVASCRIPT90" class="btn btn-ghost">Sign up now</a>
           </div>
         </div>
       </div>
@@ -320,7 +325,7 @@
   </div>
 </section>
 
-<section class="section-form">
+<!-- <section class="section-form">
             <div class="row">
                 <h2>We're happy to hear from you</h2>
             </div>
@@ -384,7 +389,7 @@
                 
             </div>
         </section>
-        
+         -->
         <footer>
             <div class="row">
                 <div class="col span-1-of-2">
@@ -411,11 +416,12 @@
                 </p>
             </div>
         </footer>
-<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
-<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"</script>
-<script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"</script>
-<script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"</script>
-<script src="resources/js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>
 
 
